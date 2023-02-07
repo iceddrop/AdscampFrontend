@@ -1,0 +1,8 @@
+#header{
+    background:var(--main-color);
+}
+.logo a{
+ text-decoration: none;
+ color:white;
+ padding:5px;
+}
