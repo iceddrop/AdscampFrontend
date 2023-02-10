@@ -4,6 +4,7 @@ import './Campaign.css';
 import Sidebar from "../../components/Sidebar";
 import CampaignCard from "../../components/cards/CampaignCard";
 import CampaignModal from "../../components/CampaginModal";
+import SingleCampaign from "../../components/singlecampaign/SingleCampaign";
 
 const Campaign = () =>{
     return(
@@ -13,6 +14,7 @@ const Campaign = () =>{
           <Sidebar/>
           <CampaignCard/>
           <CampaignModal/>
+          <SingleCampaign/>
           </div>
          </>
     )

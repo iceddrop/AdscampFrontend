@@ -1,0 +1,7 @@
+img{
+    width:100%;
+}
+.first-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

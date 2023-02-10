@@ -33,14 +33,13 @@ const CampaignCard = () => {
                 </div>
                 <div className='campaign_card__item-cta d-flex justify-content-center mt-4'>
         
-                <a href="#" className='btn btn-primary rounded-pill' target='_blank'>Show Details</a>
+                <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#SModal" className='btn btn-primary rounded-pill' target='_blank'>Show Details</a>
                 </div>
               </article>
             )
   
         })
       }
- 
 
     </div>
     </>

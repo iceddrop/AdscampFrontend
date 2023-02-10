@@ -15,7 +15,7 @@ const Nav = () =>{
           <li><Link  to='/' className="nav-link scrollto active">Home</Link></li>
           <li><Link  to='/' className="nav-link scrollto active">Campaign</Link></li>
         </ul>
-        <i onClick={showHide} className="fas fa-list mobile-nav-toggle"></i>
+        <i onClick={showHide} className="fas fa-arrow-right mobile-nav-toggle"></i>
       </nav>
     )
 }

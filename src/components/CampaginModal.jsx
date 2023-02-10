@@ -1,29 +1,26 @@
 import React from "react";
 import axios from "axios";
 
-const CampaignModal = ()=>{
-    const [post, setPost] = React.useState(null);
-    const createPost =(e) => {
-        e.preventDefault();
-        axios
-          .post('http://localhost:8000/api/v1/campaign', {
-            name:document.getElementById('name').value,
-            from_date:document.getElementById('from_date').value,
-            to_date:document.getElementById('to_date').value,
-            'total_budget':document.getElementById('total_budget').value,
-            'daily_budget':document.getElementById('daily_budget').value,
-            image:document.getElementById('image').value
-          })
-          .then((response) => {
-            setPost(response.data);
+const CampaignModal = () => {
+  const [post, setPost] = React.useState(null);
+  const createPost = async (e) => {
+      e.preventDefault();
+      let form = document.getElementById('form');
+      let formData = new FormData(form);
+      try {
+          const res = await axios.post('http://localhost:8000/api/v1/campaign', formData, {
+              headers: {
+              }
           });
-          console.log(post.data);
-          if (!post) return "No Post Data!"
+          console.log(res.data);
+      } catch (e) {
+          console.log(e.error);
       }
+  };
     return(
         <div className="modal fade" id="CModal" tabindex="-1" aria-labelledby="CModalLabel" aria-hidden="true">
-        <div className="modal-dialog">
-             <form>
+        <div className="modal-dialog modal-lg">
+             <form id="form" encType="multipart/form-data">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="CModalLabel">Add Campaign</h5>
@@ -46,7 +43,7 @@ const CampaignModal = ()=>{
                  </div>
                  <div className="form-group my-2">
                         <label htmlFor="Image"><span className="text-muted"><small>Campaign Images  </small><span className="text-danger">*</span></span></label>
-                        <input id="image" name="image" className="form-control" type="file" multiple/>
+                        <input id="image" name="image" accept="image/*" className="form-control" type="file" multiple/>
                  </div>
                  <div className="form-group d-flex justify-content-between my-2">
                     <div className="daily_budget">
@@ -71,3 +68,5 @@ const CampaignModal = ()=>{
 }
 
 export default CampaignModal;
+
+
