@@ -8,7 +8,7 @@ const CampaignModal = () => {
       let form = document.getElementById('form');
       let formData = new FormData(form);
       try {
-          const res = await axios.post('http://localhost:8000/api/v1/campaign', formData, {
+          const res = await axios.post('https://adscamp.thevootblog.com/api/v1/campaign', formData, {
               headers: {
               }
           });

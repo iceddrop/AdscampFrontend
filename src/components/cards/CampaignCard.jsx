@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 import './CampaignCard.css';
 import axios from 'axios';
 import IMG1 from '../../assets/img/assets/portfolio1.PNG';
-const baseURL = "http://localhost:8000/api/v1/campaign";
+const baseURL = "https://adscamp.thevootblog.com/api/v1/campaign";
 
 const CampaignCard = () => {
     const [campaign, setCampaign] = useState(null);
