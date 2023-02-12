@@ -4,7 +4,7 @@ import FancyB from "../fancyBox/FancyBox";
 
 const SingleCampaign = ()=>{
     return(
-        <div className="modal fade" id="SModal" tabindex="-1" aria-labelledby="SModalLabel" aria-hidden="true">
+        <div className="modal fade" id="SModal" aria-labelledby="SModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">

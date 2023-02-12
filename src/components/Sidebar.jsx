@@ -23,23 +23,23 @@ return (
 
       <CDBSidebarContent className="sidebar-content">
         <CDBSidebarMenu>
-          <NavLink exact to="/" activeClassName="activeClicked">
+          <NavLink  to="/">
             <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
           </NavLink>
-          <NavLink exact to="/tables" activeClassName="activeClicked">
+          <NavLink  to="/tables" >
             <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
           </NavLink>
-          <NavLink exact to="/profile" activeClassName="activeClicked">
+          <NavLink  to="/profile" >
             <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
           </NavLink>
-          <NavLink exact to="/analytics" activeClassName="activeClicked">
+          <NavLink  to="/analytics" >
             <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
           </NavLink>
-          <NavLink exact to="/transactions" activeClassName="activeClicked">
+          <NavLink  to="/transactions" >
             <CDBSidebarMenuItem icon="fas fa-file-invoice-dollar">Transactions</CDBSidebarMenuItem>
           </NavLink>
 
-          <NavLink type="button"  activeClassName="activeClicked" data-bs-toggle="modal" data-bs-target="#CModal">
+          <NavLink type="button"   data-bs-toggle="modal" data-bs-target="#CModal">
           <CDBSidebarMenuItem icon="plus">Add A Campaign</CDBSidebarMenuItem>
           </NavLink>
    

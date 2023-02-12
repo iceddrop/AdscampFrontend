@@ -18,7 +18,7 @@ const CampaignModal = () => {
       }
   };
     return(
-        <div className="modal fade" id="CModal" tabindex="-1" aria-labelledby="CModalLabel" aria-hidden="true">
+      <div className="modal fade" id="CModal" aria-labelledby="CModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-lg">
              <form id="form" encType="multipart/form-data">
           <div className="modal-content">
