@@ -7,15 +7,14 @@ const CampaignModal = () => {
       e.preventDefault();
       let form = document.getElementById('form');
       let formData = new FormData(form);
-      try {
-          const res = await axios.post('https://adscamp.thevootblog.com/api/v1/campaign', formData, {
-              headers: {
-              }
-          });
-          console.log(res.data);
-      } catch (e) {
-          console.log(e.error);
-      }
+       axios.post('https://adscamp.thevootblog.com/api/v1/campaign',formData,{
+         headers:{
+          'Content-Type':'Multipart/form-data',
+          "Access-Control-Allow-Origin":'*'
+         }
+        
+       }).then(data => console.log(data))
+          .catch(err=>console.log(err))
   };
     return(
       <div className="modal fade" id="CModal" aria-labelledby="CModalLabel" aria-hidden="true">
