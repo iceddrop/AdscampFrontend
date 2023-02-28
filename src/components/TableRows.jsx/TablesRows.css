@@ -1,0 +1,25 @@
+.commission-title-td{
+   
+  
+}
+.edit-icon{
+    color:#616D7E;
+}
+.edit-btn-2{
+    border: 1px solid #616D7E;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    padding: 3px;
+    width: 35px;
+}
+.bin-btn{
+    border: 1px solid #616D7E;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    padding:3px;
+    width: 35px;
+}
+.table-font{
+    font-family: Roboto;
+    font-size: 12px;
+}

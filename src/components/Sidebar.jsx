@@ -14,7 +14,7 @@ const Sidebar = () =>{
   // const [activeNav, setActiveNav] = useState('#');
 return (
     <>
-        <div id="side" style={{ display: 'flex', marginTop:40, height: '100vh', overflow: 'scroll initial', position:'fixed' }}>
+        <div id="side" className="sidebar" style={{ display: 'flex', height: '100vh', overflow: 'scroll initial', position:'sticky' , top:'0' }}>
     <CDBSidebar textColor="#fff" backgroundColor="#37517e;">
       <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
         <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
