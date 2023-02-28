@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import {
   CDBSidebar,
@@ -11,6 +11,7 @@ import {
 
 
 const Sidebar = () =>{
+  // const [activeNav, setActiveNav] = useState('#');
 return (
     <>
         <div id="side" style={{ display: 'flex', marginTop:40, height: '100vh', overflow: 'scroll initial', position:'fixed' }}>
@@ -23,14 +24,25 @@ return (
 
       <CDBSidebarContent className="sidebar-content">
         <CDBSidebarMenu>
-          <NavLink  to="/">
-            <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
+          <NavLink  to="/campaign">
+            <CDBSidebarMenuItem 
+            // onMouseOver={()=>setActiveNav('/Campaign')}    className={activeNav==="/Campaign" ? 'bg-white text-primary':''}  
+            icon="columns">Dashboard</CDBSidebarMenuItem>
           </NavLink>
-          <NavLink  to="/tables" >
-            <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
+          <NavLink  to="/campaign">
+            <CDBSidebarMenuItem 
+            // onMouseOver={()=>setActiveNav('/Campaign')}    className={activeNav==="/Campaign" ? 'bg-white text-primary':''}  
+            icon="columns">Campaign</CDBSidebarMenuItem>
+          </NavLink>
+          <NavLink   to="/tables" >
+            <CDBSidebarMenuItem 
+            // onMouseOver={()=>setActiveNav('/Tables')}  className={activeNav==="/Tables" ? 'bg-white text-primary':''}  
+            icon="table">Tables</CDBSidebarMenuItem>
           </NavLink>
           <NavLink  to="/profile" >
-            <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem 
+            // onMouseOver={()=>setActiveNav('/Profile')}  className={activeNav==="/Profile" ? 'bg-white text-primary':''}  
+            icon="user">Profile page</CDBSidebarMenuItem>
           </NavLink>
           <NavLink  to="/analytics" >
             <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
