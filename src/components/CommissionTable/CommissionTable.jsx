@@ -1,7 +1,7 @@
 import './CommissionTable.css'
 import {GoChevronDown} from 'react-icons/go'
 import CommissionData from '../../CommissionData'
-import TableRows from '../TableRows.jsx/TableRows'
+import TableRows from '../TableRows/TableRows'
 
 export default function CommissionTable(){
       console.log(CommissionData.map(data => data.dateCreated))
