@@ -1,32 +1,37 @@
 import React from 'react'
 
 const Footer = () => {
-  const color = "#37517e";
   return (
-    <div>
-      <div style={{ flexDirection: "row", display: "flex", padding:"3rem 0", gap:"4rem", backgroundColor: color, justifyContent:"center", alignItems:"baseline", color:"white",}}>
-        <div style={{flexDirection: "column", display: "flex", justifyContent:"flex-start", alignItems:"flex-start"}}>
-            <a>Delivery & return</a>
-            <a>FAQs</a>
-            <a>Gift Packaging</a>
-            <a>sizing</a>
-            <a>Acount</a>
-            <a>Customer support</a>
-        </div>
-        <div style={{flexDirection: "column", display: "flex", justifyContent:"flex-start", alignItems:"flex-start"}}>
-            <a>Alternator & Depairs</a>
-            <a>Product Catalog</a>
-            <a>styling</a>
-        </div>
-        <div style={{flexDirection: "column", display: "flex", justifyContent:"flex-start", alignItems:"flex-start"}}>
-            <a>Contact</a>
-            <p>Obafemi Awolowo university</p>
-            <p>+234-8131249294</p>
-            <p>TimeSaver@watch.com</p>
-        </div>
+    <div className="footer-container">
+      <div className="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#">Delivery & return</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Gift Packaging</a></li>
+          <li><a href="#">Sizing</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Customer support</a></li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Alternator & Depairs</a></li>
+          <li><a href="#">Product Catalog</a></li>
+          <li><a href="#">Styling</a></li>
+        </ul>
+      </div>
+      <div className="footer-section">
+        <h4>Contact</h4>
+        <ul>
+          <li>Obafemi Awolowo university</li>
+          <li>+234-8131249294</li>
+          <li>TimeSaver@watch.com</li>
+        </ul>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
