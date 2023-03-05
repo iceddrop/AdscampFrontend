@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pricing.css';
+import './PriceComp.css';
 
 const PricingCard = (props) => {
   const priceList = [
@@ -32,7 +32,8 @@ const PricingCard = (props) => {
     width: "300px",
     height: props.height,
     color: props.color,
-    backgroundColor: props.bg
+    backgroundColor: props.bg,
+    borderRadius:"45px"
   };
   
   const titleStyle = {
@@ -57,7 +58,7 @@ const PricingCard = (props) => {
   };
   
   return (
-    <div style={cardStyle}>
+    <div className="my-5" style={cardStyle}>
       <h3 style={titleStyle}>{props.title}</h3>
       <div style={priceStyle}>{props.price} per month</div>
       <ul>
@@ -65,20 +66,20 @@ const PricingCard = (props) => {
           <li key={index}>{access}</li>
         ))}
       </ul>
-      <button style={buttonStyle}>Get Started</button>
+      <button className="rounded-pill" style={buttonStyle}>Get Started</button>
     </div>
   );
 };
 
 const Pricing = () => {
   return (
-    <div className="pricing">
+    <div className="pricing my-5">
       <h2 className="pricing__title">Pricing</h2>
       <p className="pricing__subtitle">We provide categories of packages. Choose your plan.</p>
       <div className="pricing__cards">
-        <PricingCard color="blue" bg="white" title="Basic" price="$50" num={0} height="400px" />
-        <PricingCard color="white" bg="blue" title="Standard" price="$200" num={1} height="460px" />
-        <PricingCard color="blue" bg="white" title="Premium" price="$500" num={2} height="400px" />
+        <PricingCard  color="#47b2e4" bg="white" title="Basic" price="$50" num={0} height="400px" />
+        <PricingCard color="white" bg="#37517e" title="Standard" price="$200" num={1} height="460px" />
+        <PricingCard color="#47b2e4" bg="white" title="Premium" price="$500" num={2} height="400px" />
       </div>
     </div>
   );
