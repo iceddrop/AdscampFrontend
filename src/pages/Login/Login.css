@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
 .login-bg{
-    background-color:#0C2340;
+    background-color:hsl(218, 23%, 16%);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -12,6 +13,9 @@
     width:130px;
     height:130px;
     object-fit: contain;
+}
+.login-form{
+    width:250px;
 }
 .login-text-div{
     display: flex;
@@ -26,8 +30,117 @@
     letter-spacing: 1px;
 }
 .login-paragraph{
-    color:#778ba5 ;
+    color:#b4b7be;
     font-family: Rubik;
     font-weight: 400;
     font-size:1.4rem;
+}
+.form-label{
+    font-family:Rubik;
+    color:white;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.form-input-div{
+    background-color: hsl(217, 19%, 24%);
+    padding:5px 0px 10px 15px;
+    border-radius: 3px;
+    width:100%;
+    display: flex;
+}
+.form-input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #b4b7be;
+}
+.mail-icon{
+    width:22px;
+    height:22px;
+    color:#b4b7be;
+   
+}
+.lock-icon{
+    width:22px;
+    height:22px;
+    color:#b4b7be; 
+    
+}
+/* WebKit, Edge */
+::-webkit-input-placeholder {
+    position: relative;
+    top:2px;
+    color:#b4b7be;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  /* Firefox 4-18 */
+  :-moz-placeholder {
+    position: relative;
+    top:2px;
+    color:#b4b7be;
+    opacity: 1;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  /* Firefox 19+ */
+  ::-moz-placeholder {
+    position: relative;
+    top:2px;
+    color:#b4b7be;
+    opacity: 1;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  /* IE 10-11 */
+  :-ms-input-placeholder {
+    position: relative;
+    top:2px;
+    color:#b4b7be;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  /* Edge */
+  ::-ms-input-placeholder {
+    position: relative;
+    top:2px;
+    color:#b4b7be;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+  /* MODERN BROWSER */
+  ::placeholder {
+    color:#b4b7be;
+    position: relative;
+    top:2px;
+    font-family: Rubik;
+    font-size: 12px;
+  }
+.login-check{
+   background: transparent;
+    width: 20px;
+    height:20px;
+}
+.check-label{
+    color:white;
+    font-family: Rubik;
+}
+.login-button{
+    background-color: #7cc5d9;
+    color:hsl(218, 23%, 16%);
+    font-family: Rubik;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.login-link{
+    font-family: Rubik;
+    font-size:1.2rem;
+    color:#b4b7be;
+}
+@media only screen and (min-width:768px){
+    .login-form{
+    width:350px;
+}
 }
