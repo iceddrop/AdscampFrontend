@@ -1,5 +1,6 @@
 import React from 'react';
 import './PriceComp.css';
+import {CheckCircleIcon} from "@chakra-ui/icons"
 
 const PricingCard = (props) => {
   const priceList = [
@@ -29,16 +30,20 @@ const PricingCard = (props) => {
   const cardStyle = {
     padding: "2rem 3rem",
     boxShadow: "0px 4px 18px 0px rgb(0 0 0 / 30%)",
-    width: "300px",
+    width: "340px",
     height: props.height,
     color: props.color,
     backgroundColor: props.bg,
-    borderRadius:"45px"
+    borderRadius:"2rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column"
   };
   
   const titleStyle = {
     fontSize: "20px",
-    textAlign: "center"
+    textAlign: "center",
   };
   
   const priceStyle = {
@@ -61,9 +66,9 @@ const PricingCard = (props) => {
     <div className="my-5" style={cardStyle}>
       <h3 style={titleStyle}>{props.title}</h3>
       <div style={priceStyle}>{props.price} per month</div>
-      <ul>
+      <ul className='priceList'>
         {Object.values(priceList[props.num]).map((access, index) => (
-          <li key={index}>{access}</li>
+          <li key={index}><CheckCircleIcon color={props.color}/> {access}</li>
         ))}
       </ul>
       <button className="rounded-pill" style={buttonStyle}>Get Started</button>

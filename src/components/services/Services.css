@@ -21,8 +21,6 @@
     }
   }
 
-
-  
   .card {
     background-color: black;
     color: white;
@@ -64,5 +62,20 @@
   
   .card-arrow {
     color: white;
+  }
+  @media screen and (max-width: 992px) {
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      gap: 1rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .cards-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      gap: 1rem;
+    }
   }
   
