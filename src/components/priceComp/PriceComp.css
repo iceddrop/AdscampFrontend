@@ -7,17 +7,26 @@
   .pricing__title {
     color: #47b2e4;
   }
-  
+  .my-5 * + * {
+    margin-top: 1rem;
+  }
   .pricing__subtitle {
     color: #47b2e4;
     margin: 2rem;
     font-size: 1rem;
+  }
+  .priceList {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
   @media (min-width:768px){
     .pricing__cards {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 2rem;
     }
     
