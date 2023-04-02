@@ -1,0 +1,71 @@
+:root{
+    --main-color:#37517e;
+    --color-white:#fff;
+    --color-light:rgba(255,255,255,0.6);
+    --transition: all 400ms ease;
+  }
+.dflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--color-white);
+    
+    
+}
+.starContainer {
+    display: flex;
+    align-items: flex-start;
+}
+.cardComp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+.imgContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.text {
+    font-weight: 500;
+    color: var(--main-color);
+    font-size: larger;
+}
+.round {
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+}
+.Card {
+    padding: 2rem;
+    width: 40%;
+    height: 250px;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);;
+}
+@media screen and (max-width: 992px) {
+    .cardComp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+    }
+    .Card {
+        padding: 2rem;
+        width: 80%;
+        height: 250px;
+        box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);;
+    }
+  }
+  

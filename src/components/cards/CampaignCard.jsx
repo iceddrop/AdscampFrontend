@@ -20,7 +20,7 @@ const CampaignCard = () => {
             return(
                 <article key={index} className='campaign_card__item mt-4'>
                 <div className='campaign_card__item-image'>
-                  <img style={{width:'100%', height:'250px'}} src={IMG1} alt="Discussion Forum"/>
+                  <img style={{width:'100%', height:'250px'}} src={IMG1}/>
                 </div>
                 <h5 className="mt-2">{item.name}</h5>
                 <h6>Total Budget${item.total_budget}</h6>
