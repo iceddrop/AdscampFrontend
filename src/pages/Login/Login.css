@@ -9,9 +9,15 @@
     align-items: center;
     font-size:16px;
 }
+.hide-error{
+    display: none;
+}
+.show-error{
+   display: block;
+}
 .company-logo{
-    width:130px;
-    height:130px;
+    width:140px;
+    height:140px;
     object-fit: contain;
 }
 .login-form{
