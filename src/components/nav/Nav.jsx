@@ -14,6 +14,7 @@ const Nav = () =>{
         <ul>
           <li><Link  to='/' className="nav-link scrollto active">Home</Link></li>
           <li><Link  to='/' className="nav-link scrollto active">Campaign</Link></li>
+          <li><Link  to='/login' className="nav-link scrollto active">Log in</Link></li>
         </ul>
         <i onClick={showHide} className="fas fa-arrow-right mobile-nav-toggle"></i>
       </nav>
